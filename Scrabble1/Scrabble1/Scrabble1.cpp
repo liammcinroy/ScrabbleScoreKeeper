@@ -202,6 +202,7 @@ int WordScore(string word)
 		wordscore += currentletterscore;
 		currentletterscore = 0;
 	}
+	system("CLS");
 	return wordscore * wholewordmodifier1 * wholewordmodifier2;
 }
 
@@ -352,6 +353,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 		if (reply == "no")
 		{
+			system("CLS");
 			done = true;
 
 			for (int i = 0; i < playersAmount; i++)
@@ -364,6 +366,7 @@ int _tmain(int argc, _TCHAR* argv[])
 				std::cout << players[i] << " lost " << subtractscore << " points.\n";
 			}
 		}
+		system("CLS");
 	}
 
 	for (int i = 0; i < playersAmount; i++)
